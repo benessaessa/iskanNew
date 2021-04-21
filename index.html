@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>موقعكم</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light px-3" dir="rtl">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="imageLogo" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-align-justify text-white">
+        </span>
+      </button>
+      <div class="collapse navbar-collapse py-2" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="search.html"> المقالات </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="search.html"><i class="fa fa-briefcase"></i> للشركات </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="announcement.html"><i class="fa fa-plus-circle ps-1"></i> إضافة عقار</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-sign-in-alt ps-1"></i> تسجيل الدخول
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-announcement.html"> <i class="fa fa-edit ps-1"></i> إنشاء حساب</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- first section -->
+  <div class="search">
+    <div class="overlay pt-3">
+      <div class="container">
+        <div class="text-white pt-4">
+          <h2 class="text-center fw-bold">إيجار، بيع وشراء</h2>
+          <h3 class="text-center pb-4">عقارات في مصر</h3>
+          <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" 
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" 
+              aria-selected="false">بيع 
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" 
+              data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" 
+              aria-selected="true">إيجار 
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="container mt-3 py-4">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="boxSearch">
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <form action="#">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text p-0">
+                          <button class="btn btn-primary px-4">بحث</button>
+                        </span>
+                        <input type="text" required placeholder="إسم المدينة أو المنتجع أو الشارع" class="form-control text-end" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">
+                          <i class="fa fa-search"></i>
+                        </span>
+                      </div>
+                    </form>
+                    <p class="text-center advanced text-light"> <i class="fa fa-angle-down"></i> بحث متقدم</p>
+                    <form action="#" class="formFilter" dir="rtl">
+                      <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected>إختر الفئة</option>
+                            <option value="1">تجاري</option>
+                            <option value="2">سكني</option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected>إختر النوع</option>
+                            <option value="1">مكتب</option>
+                            <option value="2">مستودع</option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> الحد الأدني للغرف </option>
+                            <option value="1">استوديو</option>
+                            <option value="2">1 غرف </option>
+                            <option value="3">2 غرف </option>
+                            <option value="4">3 غرف </option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> الحد الأقصي للغرف </option>
+                            <option value="1">استوديو</option>
+                            <option value="2">1 غرف </option>
+                            <option value="3">2 غرف </option>
+                            <option value="4">3 غرف </option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> كل العقار </option>
+                            <option value="1">مباشرة من المالك</option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> حدد مدة الإيجار </option>
+                            <option value="1"> قصيرة المدة </option>
+                            <option value="2"> طويلة المدة </option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <input type="text" class="form-control" placeholder="السعر الأدني">
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <input type="text" class="form-control" placeholder="السعر الأقصي">
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> إختر الفرش </option>
+                            <option value="1"> مفروشة بالكامل  </option>
+                            <option value="2"> نصف مفروشة </option>
+                            <option value="3"> غير مفروشة </option>
+                          </select>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <form action="#">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text p-0">
+                          <button class="btn btn-primary px-4">بحث</button>
+                        </span>
+                        <input type="text" required placeholder="إسم المدينة أو المنتجع أو الشارع" class="form-control text-end" aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-text">
+                          <i class="fa fa-search"></i>
+                        </span>
+                      </div>
+                    </form>
+                    <p class="text-center advanced text-light"> <i class="fa fa-angle-down"></i> بحث متقدم</p>
+                    <form action="#" class="formFilter" dir="rtl">
+                      <div class="row">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected>إختر الفئة</option>
+                            <option value="1">تجاري</option>
+                            <option value="2">سكني</option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected>إختر النوع</option>
+                            <option value="1">مكتب</option>
+                            <option value="2">مستودع</option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> الحد الأدني للغرف </option>
+                            <option value="1">استوديو</option>
+                            <option value="2">1 غرف </option>
+                            <option value="3">2 غرف </option>
+                            <option value="4">3 غرف </option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> الحد الأقصي للغرف </option>
+                            <option value="1">استوديو</option>
+                            <option value="2">1 غرف </option>
+                            <option value="3">2 غرف </option>
+                            <option value="4">3 غرف </option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> كل العقار </option>
+                            <option value="1">مباشرة من المالك</option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> أختر طريقة الدفع </option>
+                            <option value="1"> نقدي </option>
+                            <option value="2"> أقساط </option>
+                          </select>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <input type="text" class="form-control" placeholder="السعر الأدني">
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <input type="text" class="form-control" placeholder="السعر الأقصي">
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 pt-2">
+                          <select class="form-select">
+                            <option selected> إختر الفرش </option>
+                            <option value="1"> مفروشة بالكامل  </option>
+                            <option value="2"> نصف مفروشة </option>
+                            <option value="3"> غير مفروشة </option>
+                          </select>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                
+  
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Akar Good -->
+  <div class="cardAkarDetails border-bottom pb-4">
+    <div class="container" dir="rtl">
+      <h4 class="text-center py-4">العقارات المميزة</h4>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item heightDev active">
+                  <img src="images/img1.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+                </div>
+                <div class="carousel-item heightDev">
+                  <img src="images/background2.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+                </div>
+                <div class="carousel-item heightDev">
+                  <img src="images/img1.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- <a href="#" class="heightDev">
+              <img src="images/img1.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+            </a> -->
+            <div class="card-body pb-0">
+              <a href="#" class="text-decoration-none linkCard">
+                <span class="text-danger fw-bold">891,080 EGP</span> 
+                <span class="badge bg-secondary float-start">البلاتينية</span>
+                <p class="card-text pt-2"> <i class="fa fa-map-marker"></i>  جنوب، كمبوندات العاصمة الإدارية </p>
+                <p><i class="fa fa-home"></i> فيلا
+                  <img src="images/company.jpeg" class="imgComapny" alt="comapny">
+                </p>
+                <p>
+                  <span> <i class="fa fa-bed"></i> 3</span>
+                  <span class="px-3"><i class="fa fa-toilet"></i> 4</span>
+                  <span><i class="fa fa-chart-area"></i> 371 متر<sup>2</sup></span>
+                </p>
+              </a>
+              <div class="row">
+                <div class="col-sm-6 pb-2">
+                  <button class="btn btnCard w-100"><i class="fa fa-phone"></i> إتصل</button>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btnCard px-1 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-envelope"></i> البريد الإلكتروني</button>
+                </div>
+              </div>
+              <p class="text-start pt-2">آخر تحديث 04‏/04‏/2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-3">
+            <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item heightDev active">
+                  <img src="images/img1.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+                </div>
+                <div class="carousel-item heightDev">
+                  <img src="images/background2.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+                </div>
+                <div class="carousel-item heightDev">
+                  <img src="images/img1.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- <a href="#" class="heightDev">
+              <img src="images/img1.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+            </a> -->
+            <div class="card-body pb-0">
+              <a href="#" class="text-decoration-none linkCard">
+                <span class="text-danger fw-bold">891,080 EGP</span> 
+                <span class="badge bg-secondary float-start">البلاتينية</span>
+                <p class="card-text pt-2"> <i class="fa fa-map-marker"></i>  جنوب، كمبوندات العاصمة الإدارية </p>
+                <p><i class="fa fa-home"></i> فيلا
+                  <img src="images/last.jpg" class="imgComapny" alt="comapny">
+                </p>
+                <p>
+                  <span> <i class="fa fa-bed"></i> 3</span>
+                  <span class="px-3"><i class="fa fa-toilet"></i> 4</span>
+                  <span><i class="fa fa-chart-area"></i> 371 متر<sup>2</sup></span>
+                </p>
+              </a>
+              <div class="row">
+                <div class="col-sm-6 pb-2">
+                  <button class="btn btnCard w-100"><i class="fa fa-phone"></i> إتصل</button>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btnCard px-1 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-envelope"></i> البريد الإلكتروني</button>
+                </div>
+              </div>
+              <p class="text-start pt-2">آخر تحديث 04‏/04‏/2021</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-3">
+            <a href="#" class="heightDev">
+              <img src="images/bgsky.jpg" class="img-fluid mx-auto d-block" alt="card-image">
+            </a>
+            <div class="card-body pb-0">
+              <a href="#" class="text-decoration-none linkCard">
+                <span class="text-danger fw-bold">891,080 EGP</span> 
+                <span class="badge bg-secondary float-start">البلاتينية</span>
+                <p class="card-text pt-2"> <i class="fa fa-map-marker"></i>  جنوب، كمبوندات العاصمة الإدارية </p>
+                <p><i class="fa fa-home"></i> فيلا
+                  <img src="images/company.jpeg" class="imgComapny" alt="comapny">
+                </p>
+                <p>
+                  <span> <i class="fa fa-bed"></i> 3</span>
+                  <span class="px-3"><i class="fa fa-toilet"></i> 4</span>
+                  <span><i class="fa fa-chart-area"></i> 371 متر<sup>2</sup></span>
+                </p>
+              </a>
+              <div class="row">
+                <div class="col-sm-6 pb-2">
+                  <button class="btn btnCard w-100"><i class="fa fa-phone"></i> إتصل</button>
+                </div>
+                <div class="col-sm-6">
+                  <button class="btn btnCard px-1 w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-envelope"></i> البريد الإلكتروني</button>
+                </div>
+              </div>
+              <p class="text-start pt-2">آخر تحديث 04‏/04‏/2021</p>
+            </div>
+          </div>
+        </div>
+        <!-- Modal Contact -->
+        <div class="modal fade modalContact" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="exampleModalLabel">
+                   إرسال بريد إلكتروني إلى المدير
+                </h5>
+                <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="card">
+                  <div class="card-body">
+                    <form action="#">
+                      <div class="mb-3">
+                        <label for="fName" class="form-label"> الإسم * </label>
+                        <input type="email" class="form-control" id="fName" placeholder="" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">البريد الإلكتروني * </label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="telephone" class="form-label"> رقم الهاتف </label>
+                        <input type="tel" class="form-control" id="telephone" placeholder="+2 01114205243">
+                      </div>
+                      <div class="text-end" dir="rtl">
+                        <label for="floatingTextarea2">نص الرسالة *</label>
+                        <textarea class="form-control mt-2" placeholder="مرحباً ، أود الاستفسار عن عقارك على Isqan.com برقم مرجعي: IQ-NEWCAPITAL-JNOUB" id="floatingTextarea2" required></textarea>
+                      </div>
+                      <button class="btn btnCard w-100 px-5 mt-3" type="submit">إرسال</button>
+                      <!-- <p class="pt-3"><small>بالضغط على "للإتصال" انكم توافقون على سياسة حماية البيانات الشخصية</small></p> -->
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Famus companies -->
+  <div class="famusCompany pb-4">
+    <div class="container">
+      <h4 class="text-center pt-4"> الشركات المميزة </h4>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/company.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/app-store.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/company.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/app-store.png" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/company.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/company.jpeg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/app-store.png" alt="">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Famus Akar -->
+  <div class="famusAkar py-4 border-top">
+    <div class="container" dir="rtl">
+      <h4 class="text-center py-4">بحوث مشهورة  </h4>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h4 class="pt-2 pb-3 text-center">عقارات القاهرة</h4>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h4 class="pt-2 pb-3 text-center"> عمليات البحث عن العقار</h4>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h4 class="pt-2 pb-3 text-center"> عمليات البحث المتكررة</h4>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <h4 class="pt-2 pb-3 text-center"> عمليات البحث المشهورة </h4>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+          <p><a href="#"> شقق للبيع بالقاهرة</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer dir="rtl" class="bg-dark footer py-4 text-center">
+    <div class="container">
+      <div class="row border-bottom">
+        <div class="col-lg-4">
+          <h3 class="pb-3">اتصل بنا</h3>
+          <p>32 البنفسج ، التجمع الأول القاهرة الجديدة ، القاهرة ، مصر</p>
+          <p><a href="mailto:info@isqan.com">info@isqan.com</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="pb-3">روابط مفيدة</h3>
+          <p><a href="#">نبذة عنا</a></p>
+          <p><a href="#">سياسة الخصوصية</a></p>
+          <p><a href="#">الشروط والأحكام</a></p>
+          <p><a href="#">المقالات</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h3 class="pb-3">اشترك</h3>
+          <p>الاشتراك لرسالتنا الإخبارية</p>
+          <form action="#">
+            <input type="email" required placeholder="البريد الإلكتروني" class="form-control mb-2">
+            <button type="submit" class="btn btn-primary w-100 mb-2">إشترك</button>
+          </form>
+        </div>
+      </div>
+      <p class="text-center pt-2 pb-0">© 2021 Isqan LLC.</p>
+    </div>
+  </footer>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/file.js"></script>
+</body>
+
+</html>
