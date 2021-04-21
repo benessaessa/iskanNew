@@ -8,7 +8,7 @@ body{
     font-family: Cairo;
 }
 /* ============== Header ===================== */
-.navbar{
+.navbar,.collpaseSearch{
     background-color: black;
 }
 .navbar-light .navbar-toggler{
@@ -72,7 +72,7 @@ body{
     cursor: pointer;
 }
 .heightDev{
-    height: 260px; /* Can be anything */
+    height: 240px; /* Can be anything */
     width: 100%; /* Can be anything */
     position: relative;
 }
@@ -185,4 +185,15 @@ body{
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+/* ================================= */
+.imgCompany{
+    width: 60px;
+    height: 60px;
+}
+.cardDetails{
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+.cardDetails:hover{
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
 }
