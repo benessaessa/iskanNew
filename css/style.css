@@ -76,7 +76,12 @@ body{
     width: 100%; /* Can be anything */
     position: relative;
 }
-.heightDev img{
+.newHeightDev{
+    height: 480px; /* Can be anything */
+    width: 100%; /* Can be anything */
+    position: relative;
+}
+.heightDev img , .newHeightDev img{
     max-height: 100%;
     max-width: 100%;
     width: auto;
@@ -102,6 +107,13 @@ body{
     color: white;
     background-color: #07335c;
 }
+.textPrice{
+    color: #f7841b;
+    font-size: 21px;
+}
+.linkCard .badge{
+    margin-top: 0.3rem;
+}
 .famusAkar p{
     text-align: center;
 }
@@ -123,6 +135,10 @@ body{
 }
 .footer p a:hover{
     color: white;
+}
+.footer .social a .fab{
+    font-size: 26px;
+    margin-left: 1rem;
 }
 /* ======================== swiper style ====================== */
 .swiper-container {
@@ -153,10 +169,10 @@ body{
       max-width: 100%;
 }
   /* ==================== Details ================================ */
-.images .heightDev{
+.images .newHeightDev ,.images .heightDev{
       overflow: hidden;
 }
-.images .heightDev img:hover{
+.images .newHeightDev img:hover , .images .heightDev img:hover{
     transform: scale(1.2,1.2);
     transition: all .2s  ease-in-out;
 }
@@ -196,4 +212,10 @@ body{
 }
 .cardDetails:hover{
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+/* ============================================= */
+@media screen and (max-width:500px) {
+    .formFilter .form-select,.formFilter .form-control{
+        font-size: 11px;
+    }
 }
