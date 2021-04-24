@@ -1,7 +1,9 @@
 $(document).ready(function(){
-    $('.formFilter').hide();
+    $('.formFilter').show();
+    $('.formFilter2').hide();
     $('.advanced').click(function(){
         $('.formFilter').toggle();
+        $('.formFilter2').toggle();
     });
 });
 var swiper = new Swiper('.swiper-container', {

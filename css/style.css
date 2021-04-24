@@ -221,7 +221,7 @@ body{
 }
 /* ============================================= */
 @media screen and (max-width:500px) {
-    .formFilter .form-select,.formFilter .form-control{
+    .formFilter .form-select,.formFilter .form-control ,.formFilter2 .form-select,.formFilter2 .form-control{
         font-size: 11px;
     }
 }
