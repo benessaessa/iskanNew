@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.formFilter').show();
+    $('.formFilter').hide();
     $('.advanced').click(function(){
         $('.formFilter').toggle();
     });

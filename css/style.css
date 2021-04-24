@@ -99,6 +99,9 @@ body{
 .linkCard p .fa{
     color: #0054a0;
 }
+.fa-phone{
+    transform: rotate(90deg);
+}
 .btnCard{
     color: white;
     background-color: #00407a;
