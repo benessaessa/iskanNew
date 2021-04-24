@@ -216,9 +216,21 @@ body{
 .cardDetails:hover{
     box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
 }
+.sliderShow{
+    display: none;
+}
 /* ============================================= */
 @media screen and (max-width:500px) {
     .formFilter .form-select,.formFilter .form-control{
         font-size: 11px;
+    }
+}
+@media screen and (max-width: 804px){
+    .sliderShow{
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .images{
+        display: none;
     }
 }
