@@ -71,8 +71,11 @@ body{
 .advanced{
     cursor: pointer;
 }
+.cardDetails .card-body{
+    padding-bottom: 0;
+}
 .heightDev{
-    height: 240px; /* Can be anything */
+    height: 200px; /* Can be anything */
     width: 100%; /* Can be anything */
     position: relative;
 }
