@@ -222,6 +222,10 @@ body{
 .sliderShow{
     display: none;
 }
+/* =============================================== about us */
+.aboutUs {
+    min-height: 9rem;
+}
 /* ============================================= */
 @media screen and (max-width:500px) {
     .formFilter .form-select,.formFilter .form-control ,.formFilter2 .form-select,.formFilter2 .form-control{
